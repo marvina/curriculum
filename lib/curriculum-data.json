@@ -1,0 +1,2805 @@
+{
+  "version": "2026",
+  "courses": [
+    {
+      "id": "数字媒体-1",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "数字媒体艺术导论",
+      "credits": 0.5,
+      "semester": 1,
+      "hours": {
+        "total": 8,
+        "theory": 8,
+        "practice": 0
+      },
+      "practiceRate": 0,
+      "weeklyHours": 8,
+      "weeks": 1,
+      "note": null
+    },
+    {
+      "id": "数字媒体-2",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "形式基础",
+      "credits": 4,
+      "semester": 1,
+      "hours": {
+        "total": 72,
+        "theory": 16,
+        "practice": 56
+      },
+      "practiceRate": 78,
+      "weeklyHours": 16,
+      "weeks": 5,
+      "note": "最后一周8课时"
+    },
+    {
+      "id": "数字媒体-3",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "视觉感知与色彩表达",
+      "credits": 3.5,
+      "semester": 2,
+      "hours": {
+        "total": 64,
+        "theory": 12,
+        "practice": 52
+      },
+      "practiceRate": 81,
+      "weeklyHours": 14,
+      "weeks": 5,
+      "note": "最后一周8课时"
+    },
+    {
+      "id": "数字媒体-4",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "传统文化采风",
+      "credits": 2,
+      "semester": 2,
+      "hours": {
+        "total": 36,
+        "theory": 8,
+        "practice": 28
+      },
+      "practiceRate": 78,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "数字媒体-5",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "形态语言",
+      "credits": 2.5,
+      "semester": 2,
+      "hours": {
+        "total": 46,
+        "theory": 12,
+        "practice": 34
+      },
+      "practiceRate": 74,
+      "weeklyHours": 12,
+      "weeks": 4,
+      "note": "最后一周10课时"
+    },
+    {
+      "id": "数字媒体-6",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "图形创意思维",
+      "credits": 2,
+      "semester": 2,
+      "hours": {
+        "total": 36,
+        "theory": 12,
+        "practice": 24
+      },
+      "practiceRate": 67,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "数字媒体-7",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "开源硬件与编程",
+      "credits": 3,
+      "semester": 2,
+      "hours": {
+        "total": 54,
+        "theory": 16,
+        "practice": 38
+      },
+      "practiceRate": 70,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "数字媒体-8",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "文字与版式设计",
+      "credits": 3,
+      "semester": 3,
+      "hours": {
+        "total": 54,
+        "theory": 12,
+        "practice": 42
+      },
+      "practiceRate": 78,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "数字媒体-9",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "人工智能辅助视觉设计",
+      "credits": 2.5,
+      "semester": 3,
+      "hours": {
+        "total": 44,
+        "theory": 12,
+        "practice": 32
+      },
+      "practiceRate": 73,
+      "weeklyHours": 12,
+      "weeks": 4,
+      "note": "最后一周8课时"
+    },
+    {
+      "id": "数字媒体-10",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "视听语言",
+      "credits": 2,
+      "semester": 3,
+      "hours": {
+        "total": 36,
+        "theory": 12,
+        "practice": 24
+      },
+      "practiceRate": 67,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "数字媒体-11",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "三维建模与实时渲染",
+      "credits": 2.5,
+      "semester": 3,
+      "hours": {
+        "total": 44,
+        "theory": 16,
+        "practice": 28
+      },
+      "practiceRate": 64,
+      "weeklyHours": 12,
+      "weeks": 4,
+      "note": "最后一周8课时"
+    },
+    {
+      "id": "数字媒体-12",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "时间与运动",
+      "credits": 2.5,
+      "semester": 3,
+      "hours": {
+        "total": 46,
+        "theory": 16,
+        "practice": 30
+      },
+      "practiceRate": 65,
+      "weeklyHours": 12,
+      "weeks": 4,
+      "note": "最后一周10课时"
+    },
+    {
+      "id": "数字媒体-13",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数字视觉艺术课程组",
+      "nature": "专业限选课",
+      "name": "角色与场景设计",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 62,
+        "theory": 12,
+        "practice": 50
+      },
+      "practiceRate": 81,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "数字媒体-14",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数字视觉艺术课程组",
+      "nature": "专业限选课",
+      "name": "视觉转译与设计表现",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 64,
+        "theory": 12,
+        "practice": 52
+      },
+      "practiceRate": 81,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "数字媒体-15",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数字视觉艺术课程组",
+      "nature": "专业限选课",
+      "name": "视觉叙事与动态表达",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 62,
+        "theory": 16,
+        "practice": 46
+      },
+      "practiceRate": 74,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "数字媒体-16",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数字视觉艺术课程组",
+      "nature": "专业限选课",
+      "name": "界面与交互设计",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 64,
+        "theory": 16,
+        "practice": 48
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "数字媒体-17",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数字视觉艺术课程组",
+      "nature": "专业限选课",
+      "name": "创意编程与视觉艺术",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 62,
+        "theory": 16,
+        "practice": 46
+      },
+      "practiceRate": 74,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "数字媒体-18",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数字视觉艺术课程组",
+      "nature": "专业限选课",
+      "name": "舞台美术设计",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 64,
+        "theory": 12,
+        "practice": 52
+      },
+      "practiceRate": 81,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "数字媒体-19",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数字视觉艺术课程组",
+      "nature": "专业限选课",
+      "name": "服务系统设计",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 62,
+        "theory": 16,
+        "practice": 46
+      },
+      "practiceRate": 74,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "数字媒体-20",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数字视觉艺术课程组",
+      "nature": "专业限选课",
+      "name": "数字视觉展演",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 64,
+        "theory": 12,
+        "practice": 52
+      },
+      "practiceRate": 81,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "数字媒体-21",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数智创意与传播课程组",
+      "nature": "专业限选课",
+      "name": "插画设计",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 62,
+        "theory": 12,
+        "practice": 50
+      },
+      "practiceRate": 81,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "数字媒体-22",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数智创意与传播课程组",
+      "nature": "专业限选课",
+      "name": "信息可视化设计",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 64,
+        "theory": 12,
+        "practice": 52
+      },
+      "practiceRate": 81,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "数字媒体-23",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数智创意与传播课程组",
+      "nature": "专业限选课",
+      "name": "影像创意与表达",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 62,
+        "theory": 16,
+        "practice": 46
+      },
+      "practiceRate": 74,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "数字媒体-24",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数智创意与传播课程组",
+      "nature": "专业限选课",
+      "name": "用户体验设计",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 64,
+        "theory": 16,
+        "practice": 48
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "数字媒体-25",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数智创意与传播课程组",
+      "nature": "专业限选课",
+      "name": "数智视觉传播",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 62,
+        "theory": 12,
+        "practice": 50
+      },
+      "practiceRate": 81,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "数字媒体-26",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数智创意与传播课程组",
+      "nature": "专业限选课",
+      "name": "数字文创产品设计",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 64,
+        "theory": 16,
+        "practice": 48
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "数字媒体-27",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数智创意与传播课程组",
+      "nature": "专业限选课",
+      "name": "创意媒介",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 62,
+        "theory": 12,
+        "practice": 50
+      },
+      "practiceRate": 81,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "数字媒体-28",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "数智创意与传播课程组",
+      "nature": "专业限选课",
+      "name": "数字营销与设计",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 64,
+        "theory": 16,
+        "practice": 48
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "数字媒体-29",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程",
+      "nature": "专业限选课",
+      "name": "专业考察",
+      "credits": 2,
+      "semester": 5,
+      "hours": {
+        "total": 36,
+        "theory": 8,
+        "practice": 28
+      },
+      "practiceRate": 78,
+      "weeklyHours": 18,
+      "weeks": 2,
+      "note": null
+    },
+    {
+      "id": "数字媒体-30",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程",
+      "nature": "专业限选课",
+      "name": "综合设计 一",
+      "credits": 2.5,
+      "semester": 6,
+      "hours": {
+        "total": 44,
+        "theory": 10,
+        "practice": 34
+      },
+      "practiceRate": 77,
+      "weeklyHours": 8,
+      "weeks": 6,
+      "note": "最后一周4课时"
+    },
+    {
+      "id": "数字媒体-31",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程",
+      "nature": "专业限选课",
+      "name": "综合设计 二",
+      "credits": 2.5,
+      "semester": 6,
+      "hours": {
+        "total": 46,
+        "theory": 10,
+        "practice": 36
+      },
+      "practiceRate": 78,
+      "weeklyHours": 8,
+      "weeks": 6,
+      "note": "最后一周6课时"
+    },
+    {
+      "id": "数字媒体-32",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "AI创意设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "数字媒体-33",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "虚拟IP与衍生设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "数字媒体-34",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "数智文创产品开发",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 16,
+        "practice": 56
+      },
+      "practiceRate": 78,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "数字媒体-35",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "文创项目运营与管理",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "数字媒体-36",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "专产对接课程",
+      "nature": "专业任选课",
+      "name": "专产对接一",
+      "credits": 4,
+      "semester": 7,
+      "hours": {
+        "total": 72,
+        "theory": 16,
+        "practice": 56
+      },
+      "practiceRate": 78,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "数字媒体-37",
+      "major": "数字媒体艺术",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "专产对接课程",
+      "nature": "专业任选课",
+      "name": "专产对接二",
+      "credits": 4,
+      "semester": 7,
+      "hours": {
+        "total": 72,
+        "theory": 16,
+        "practice": 56
+      },
+      "practiceRate": 78,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-38",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "学科与专业导论",
+      "credits": 0.5,
+      "semester": 1,
+      "hours": {
+        "total": 8,
+        "theory": 8,
+        "practice": 0
+      },
+      "practiceRate": 0,
+      "weeklyHours": 8,
+      "weeks": 1,
+      "note": null
+    },
+    {
+      "id": "包装设计-39",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "形式基础",
+      "credits": 4,
+      "semester": 1,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 14,
+      "weeks": 5,
+      "note": null
+    },
+    {
+      "id": "包装设计-40",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "视觉感知与色彩表达",
+      "credits": 4,
+      "semester": 2,
+      "hours": {
+        "total": 72,
+        "theory": 12,
+        "practice": 60
+      },
+      "practiceRate": 83,
+      "weeklyHours": 12,
+      "weeks": 6,
+      "note": null
+    },
+    {
+      "id": "包装设计-41",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "传统文化采风",
+      "credits": 2,
+      "semester": 2,
+      "hours": {
+        "total": 36,
+        "theory": 12,
+        "practice": 24
+      },
+      "practiceRate": 67,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "包装设计-42",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "空间与材料",
+      "credits": 4,
+      "semester": 2,
+      "hours": {
+        "total": 72,
+        "theory": 12,
+        "practice": 60
+      },
+      "practiceRate": 83,
+      "weeklyHours": 12,
+      "weeks": 6,
+      "note": null
+    },
+    {
+      "id": "包装设计-43",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "图形创意思维",
+      "credits": 3,
+      "semester": 2,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-44",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "文字与版式设计",
+      "credits": 4,
+      "semester": 3,
+      "hours": {
+        "total": 72,
+        "theory": 14,
+        "practice": 58
+      },
+      "practiceRate": 81,
+      "weeklyHours": 12,
+      "weeks": 6,
+      "note": null
+    },
+    {
+      "id": "包装设计-45",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "人工智能辅助视觉设计",
+      "credits": 2.5,
+      "semester": 3,
+      "hours": {
+        "total": 46,
+        "theory": 14,
+        "practice": 32
+      },
+      "practiceRate": 70,
+      "weeklyHours": 12,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-46",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "设计研究与用户洞察",
+      "credits": 2,
+      "semester": 3,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "包装设计-47",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "时间与运动",
+      "credits": 4,
+      "semester": 3,
+      "hours": {
+        "total": 72,
+        "theory": 14,
+        "practice": 58
+      },
+      "practiceRate": 81,
+      "weeklyHours": 12,
+      "weeks": 6,
+      "note": null
+    },
+    {
+      "id": "包装设计-48",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "包装工艺与数字智能课程",
+      "nature": "专业限选课",
+      "name": "包装材料与工艺",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 62,
+        "theory": 16,
+        "practice": 46
+      },
+      "practiceRate": 74,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "包装设计-49",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "包装工艺与数字智能课程",
+      "nature": "专业限选课",
+      "name": "包装材料与生态美学",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 62,
+        "theory": 16,
+        "practice": 46
+      },
+      "practiceRate": 74,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "包装设计-50",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "包装工艺与数字智能课程",
+      "nature": "专业限选课",
+      "name": "包装容器与结构",
+      "credits": 4.5,
+      "semester": 4,
+      "hours": {
+        "total": 80,
+        "theory": 20,
+        "practice": 60
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 5,
+      "note": null
+    },
+    {
+      "id": "包装设计-51",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "包装工艺与数字智能课程",
+      "nature": "专业限选课",
+      "name": "3D包装效果图",
+      "credits": 4.5,
+      "semester": 4,
+      "hours": {
+        "total": 80,
+        "theory": 20,
+        "practice": 60
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 5,
+      "note": null
+    },
+    {
+      "id": "包装设计-52",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "包装工艺与数字智能课程",
+      "nature": "专业限选课",
+      "name": "包装印刷与工艺",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 12,
+        "practice": 42
+      },
+      "practiceRate": 78,
+      "weeklyHours": 16,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "包装设计-53",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "包装工艺与数字智能课程",
+      "nature": "专业限选课",
+      "name": "印刷技术",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 12,
+        "practice": 42
+      },
+      "practiceRate": 78,
+      "weeklyHours": 16,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "包装设计-54",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "包装工艺与数字智能课程",
+      "nature": "专业限选课",
+      "name": "智能包装设计",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 64,
+        "theory": 16,
+        "practice": 48
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-55",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "包装工艺与数字智能课程",
+      "nature": "专业限选课",
+      "name": "包装虚拟展示设计",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 64,
+        "theory": 16,
+        "practice": 48
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-56",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌与商业包装策划课程",
+      "nature": "专业限选课",
+      "name": "品牌与包装设计",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 64,
+        "theory": 16,
+        "practice": 48
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-57",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌与商业包装策划课程",
+      "nature": "专业限选课",
+      "name": "品牌策划与视觉识别",
+      "credits": 3.5,
+      "semester": 4,
+      "hours": {
+        "total": 64,
+        "theory": 16,
+        "practice": 48
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-58",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌与商业包装策划课程",
+      "nature": "专业限选课",
+      "name": "服务设计方法",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 64,
+        "theory": 16,
+        "practice": 48
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-59",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌与商业包装策划课程",
+      "nature": "专业限选课",
+      "name": "交互设计",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 64,
+        "theory": 16,
+        "practice": 48
+      },
+      "practiceRate": 75,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-60",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌与商业包装策划课程",
+      "nature": "专业限选课",
+      "name": "包装设计与策略",
+      "credits": 4,
+      "semester": 5,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-61",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌与商业包装策划课程",
+      "nature": "专业限选课",
+      "name": "包装与消费体验设计",
+      "credits": 4,
+      "semester": 5,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-62",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌与商业包装策划课程",
+      "nature": "专业限选课",
+      "name": "文创产品包装设计",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 62,
+        "theory": 16,
+        "practice": 46
+      },
+      "practiceRate": 74,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "包装设计-63",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌与商业包装策划课程",
+      "nature": "专业限选课",
+      "name": "文化符号与视觉转译",
+      "credits": 3.5,
+      "semester": 5,
+      "hours": {
+        "total": 62,
+        "theory": 16,
+        "practice": 46
+      },
+      "practiceRate": 74,
+      "weeklyHours": 16,
+      "weeks": 4,
+      "note": "最后一周14课时"
+    },
+    {
+      "id": "包装设计-64",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程",
+      "nature": "专业限选课",
+      "name": "专业考察",
+      "credits": 2,
+      "semester": 5,
+      "hours": {
+        "total": 36,
+        "theory": 8,
+        "practice": 28
+      },
+      "practiceRate": 78,
+      "weeklyHours": 18,
+      "weeks": 2,
+      "note": null
+    },
+    {
+      "id": "包装设计-65",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程",
+      "nature": "专业限选课",
+      "name": "设计工作坊",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 8,
+      "weeks": 9,
+      "note": null
+    },
+    {
+      "id": "包装设计-66",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程",
+      "nature": "专业限选课",
+      "name": "社会服务与应用专题",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 8,
+      "weeks": 9,
+      "note": null
+    },
+    {
+      "id": "包装设计-67",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "生活中的包装智慧",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "包装设计-68",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "包装视觉叙事与品牌整合",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "包装设计-69",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "文创产品包装设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "包装设计-70",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "包装策略与场景化设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-71",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "专产对接课程",
+      "nature": "专业任选课",
+      "name": "专产对接1",
+      "credits": 4,
+      "semester": 7,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "包装设计-72",
+      "major": "包装设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "专产对接课程",
+      "nature": "专业任选课",
+      "name": "专产对接2",
+      "credits": 4,
+      "semester": 7,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "视觉传达-73",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "学科与专业导论",
+      "credits": 0.5,
+      "semester": 1,
+      "hours": {
+        "total": 8,
+        "theory": 8,
+        "practice": 0
+      },
+      "practiceRate": 0,
+      "weeklyHours": 8,
+      "weeks": 1,
+      "note": null
+    },
+    {
+      "id": "视觉传达-74",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "形式基础",
+      "credits": 4,
+      "semester": 1,
+      "hours": {
+        "total": 72,
+        "theory": 16,
+        "practice": 56
+      },
+      "practiceRate": 78,
+      "weeklyHours": 16,
+      "weeks": 5,
+      "note": "最后一周8课时"
+    },
+    {
+      "id": "视觉传达-75",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "图形创意思维",
+      "credits": 3,
+      "semester": 2,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "视觉传达-76",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "设计研究与用户洞察",
+      "credits": 2,
+      "semester": 3,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "视觉传达-77",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "视觉感知与色彩表达",
+      "credits": 3,
+      "semester": 2,
+      "hours": {
+        "total": 54,
+        "theory": 12,
+        "practice": 42
+      },
+      "practiceRate": 78,
+      "weeklyHours": 12,
+      "weeks": 5,
+      "note": "最后一周6课时"
+    },
+    {
+      "id": "视觉传达-78",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "传统文化采风",
+      "credits": 2,
+      "semester": 2,
+      "hours": {
+        "total": 36,
+        "theory": 12,
+        "practice": 24
+      },
+      "practiceRate": 67,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "视觉传达-79",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "空间与材料",
+      "credits": 5,
+      "semester": 2,
+      "hours": {
+        "total": 90,
+        "theory": 12,
+        "practice": 78
+      },
+      "practiceRate": 87,
+      "weeklyHours": 14,
+      "weeks": 7,
+      "note": "最后一周6课时"
+    },
+    {
+      "id": "视觉传达-80",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "文字与版式设计",
+      "credits": 4,
+      "semester": 3,
+      "hours": {
+        "total": 72,
+        "theory": 14,
+        "practice": 58
+      },
+      "practiceRate": 81,
+      "weeklyHours": 12,
+      "weeks": 6,
+      "note": null
+    },
+    {
+      "id": "视觉传达-81",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "时间与运动",
+      "credits": 4,
+      "semester": 3,
+      "hours": {
+        "total": 72,
+        "theory": 14,
+        "practice": 58
+      },
+      "practiceRate": 81,
+      "weeklyHours": 12,
+      "weeks": 6,
+      "note": null
+    },
+    {
+      "id": "视觉传达-82",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "人工智能辅助视觉设计",
+      "credits": 2.5,
+      "semester": 3,
+      "hours": {
+        "total": 46,
+        "theory": 14,
+        "practice": 32
+      },
+      "practiceRate": 70,
+      "weeklyHours": 12,
+      "weeks": 4,
+      "note": "最后一周10课时"
+    },
+    {
+      "id": "视觉传达-83",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌策略与传播方向",
+      "nature": "专业限选课",
+      "name": "信息可视化设计",
+      "credits": 4,
+      "semester": 4,
+      "hours": {
+        "total": 72,
+        "theory": 16,
+        "practice": 56
+      },
+      "practiceRate": 78,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "视觉传达-84",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌策略与传播方向",
+      "nature": "专业限选课",
+      "name": "图像表达方法",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "视觉传达-85",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌策略与传播方向",
+      "nature": "专业限选课",
+      "name": "界面与交互设计",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "视觉传达-86",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌策略与传播方向",
+      "nature": "专业限选课",
+      "name": "品牌形象系统设计",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "视觉传达-87",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌策略与传播方向",
+      "nature": "专业限选课",
+      "name": "品牌策划",
+      "credits": 4,
+      "semester": 5,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "视觉传达-88",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌策略与传播方向",
+      "nature": "专业限选课",
+      "name": "包装与消费体验设计",
+      "credits": 5,
+      "semester": 5,
+      "hours": {
+        "total": 90,
+        "theory": 8,
+        "practice": 82
+      },
+      "practiceRate": 91,
+      "weeklyHours": 18,
+      "weeks": 5,
+      "note": null
+    },
+    {
+      "id": "视觉传达-89",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "品牌策略与传播方向",
+      "nature": "专业限选课",
+      "name": "跨媒介品牌传播",
+      "credits": 4,
+      "semester": 5,
+      "hours": {
+        "total": 72,
+        "theory": 14,
+        "practice": 58
+      },
+      "practiceRate": 81,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "视觉传达-90",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "视觉叙事与插画方向",
+      "nature": "专业限选课",
+      "name": "文本与编辑设计",
+      "credits": 4,
+      "semester": 4,
+      "hours": {
+        "total": 72,
+        "theory": 16,
+        "practice": 56
+      },
+      "practiceRate": 78,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "视觉传达-91",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "视觉叙事与插画方向",
+      "nature": "专业限选课",
+      "name": "插画语言与风格",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "视觉传达-92",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "视觉叙事与插画方向",
+      "nature": "专业限选课",
+      "name": "界面与交互设计",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "视觉传达-93",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "视觉叙事与插画方向",
+      "nature": "专业限选课",
+      "name": "视觉识别系统设计",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "视觉传达-94",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "视觉叙事与插画方向",
+      "nature": "专业限选课",
+      "name": "纸媒设计",
+      "credits": 4,
+      "semester": 5,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "视觉传达-95",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "视觉叙事与插画方向",
+      "nature": "专业限选课",
+      "name": "文化符号与视觉转译",
+      "credits": 5,
+      "semester": 5,
+      "hours": {
+        "total": 90,
+        "theory": 8,
+        "practice": 82
+      },
+      "practiceRate": 91,
+      "weeklyHours": 18,
+      "weeks": 5,
+      "note": null
+    },
+    {
+      "id": "视觉传达-96",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "视觉叙事与插画方向",
+      "nature": "专业限选课",
+      "name": "动态叙事与传播",
+      "credits": 4,
+      "semester": 5,
+      "hours": {
+        "total": 72,
+        "theory": 14,
+        "practice": 58
+      },
+      "practiceRate": 81,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "视觉传达-97",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "专业考察",
+      "credits": 2,
+      "semester": 5,
+      "hours": {
+        "total": 36,
+        "theory": 8,
+        "practice": 28
+      },
+      "practiceRate": 78,
+      "weeklyHours": 18,
+      "weeks": 2,
+      "note": null
+    },
+    {
+      "id": "视觉传达-98",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "社会设计工作坊",
+      "credits": 3,
+      "semester": 5,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 18,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "视觉传达-99",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "视觉文化工作坊",
+      "credits": 3,
+      "semester": 5,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 18,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "视觉传达-100",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "竞赛工作坊",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 6,
+      "weeks": 12,
+      "note": null
+    },
+    {
+      "id": "视觉传达-101",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "作品集与职业转化工作坊",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 6,
+      "weeks": 12,
+      "note": null
+    },
+    {
+      "id": "视觉传达-102",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "视觉表现方法",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "视觉传达-103",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "字体与版式应用设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "视觉传达-104",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "出版物设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "视觉传达-105",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "品牌策划与设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "视觉传达-106",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "专产对接课程",
+      "nature": "专业任选课",
+      "name": "专产对接实务（一）",
+      "credits": 4,
+      "semester": 7,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "视觉传达-107",
+      "major": "视觉传达设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "专产对接课程",
+      "nature": "专业任选课",
+      "name": "专产对接实务（二）",
+      "credits": 4,
+      "semester": 7,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "智能交互-108",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "学科专业导论",
+      "credits": 0.5,
+      "semester": 1,
+      "hours": {
+        "total": 8,
+        "theory": 4,
+        "practice": 4
+      },
+      "practiceRate": 50,
+      "weeklyHours": 8,
+      "weeks": 1,
+      "note": null
+    },
+    {
+      "id": "智能交互-109",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "形式基础与工程制图",
+      "credits": 3.5,
+      "semester": 1,
+      "hours": {
+        "total": 64,
+        "theory": 26,
+        "practice": 38
+      },
+      "practiceRate": 59,
+      "weeklyHours": 12,
+      "weeks": 5,
+      "note": "最后一周16课时"
+    },
+    {
+      "id": "智能交互-110",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "人工智能与设计",
+      "credits": 2,
+      "semester": 2,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "智能交互-111",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "时间与运动",
+      "credits": 3,
+      "semester": 3,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-112",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业基础课程",
+      "nature": "专业必修课",
+      "name": "传统文化采风",
+      "credits": 1.5,
+      "semester": 2,
+      "hours": {
+        "total": 26,
+        "theory": 10,
+        "practice": 16
+      },
+      "practiceRate": 62,
+      "weeklyHours": 16,
+      "weeks": 2,
+      "note": "最后一周10课时"
+    },
+    {
+      "id": "智能交互-113",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "程序设计基础",
+      "credits": 3,
+      "semester": 2,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-114",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "设计色彩",
+      "credits": 1.5,
+      "semester": 2,
+      "hours": {
+        "total": 28,
+        "theory": 12,
+        "practice": 16
+      },
+      "practiceRate": 57,
+      "weeklyHours": 16,
+      "weeks": 2,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-115",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "文字编排与界面设计",
+      "credits": 3,
+      "semester": 2,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-116",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "设计思维与创新",
+      "credits": 2,
+      "semester": 2,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "智能交互-117",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "交互设计原理与方法",
+      "credits": 3,
+      "semester": 3,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-118",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "计算机辅助设计",
+      "credits": 2,
+      "semester": 3,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "智能交互-119",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "web前端应用与开发",
+      "credits": 2,
+      "semester": 3,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 12,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "智能交互-120",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "专业核心课程",
+      "nature": "专业必修课",
+      "name": "传感器技术与应用",
+      "credits": 3,
+      "semester": 3,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-121",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "专业实践课程",
+      "nature": "专业限选课",
+      "name": "用户体验测试与评估",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-122",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "专业实践课程",
+      "nature": "专业限选课",
+      "name": "信息可视化设计",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-123",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "专业实践课程",
+      "nature": "专业限选课",
+      "name": "多模态交互设计",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-124",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "专业实践课程",
+      "nature": "专业限选课",
+      "name": "虚拟现实技术与应用",
+      "credits": 3,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-125",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "专业实践课程",
+      "nature": "专业限选课",
+      "name": "行业考察",
+      "credits": 2,
+      "semester": 5,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 16,
+      "weeks": 2,
+      "note": "最后一周20课时"
+    },
+    {
+      "id": "智能交互-126",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "专业实践课程",
+      "nature": "专业限选课",
+      "name": "服务设计与人机协同",
+      "credits": 3,
+      "semester": 5,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-127",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "专业实践课程",
+      "nature": "专业限选课",
+      "name": "沉浸式叙事与体验设计",
+      "credits": 3,
+      "semester": 5,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-128",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程群 1",
+      "nature": "专业限选课",
+      "name": "智能产品设计",
+      "credits": 3,
+      "semester": 5,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-129",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程群 1",
+      "nature": "专业限选课",
+      "name": "智能座舱体验设计",
+      "credits": 3,
+      "semester": 5,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-130",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程群 1",
+      "nature": "专业限选课",
+      "name": "设计竞赛工作坊",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 6,
+      "weeks": 12,
+      "note": null
+    },
+    {
+      "id": "智能交互-131",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程群 2",
+      "nature": "专业限选课",
+      "name": "智慧文旅体验设计",
+      "credits": 3,
+      "semester": 5,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-132",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程群 2",
+      "nature": "专业限选课",
+      "name": "思辨设计",
+      "credits": 3,
+      "semester": 5,
+      "hours": {
+        "total": 54,
+        "theory": 22,
+        "practice": 32
+      },
+      "practiceRate": 59,
+      "weeklyHours": 14,
+      "weeks": 4,
+      "note": "最后一周12课时"
+    },
+    {
+      "id": "智能交互-133",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践课程群 2",
+      "nature": "专业限选课",
+      "name": "设计服务工作坊",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 6,
+      "weeks": 12,
+      "note": null
+    },
+    {
+      "id": "智能交互-134",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "版式设计",
+      "credits": 2,
+      "semester": 6,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 18,
+      "weeks": 2,
+      "note": null
+    },
+    {
+      "id": "智能交互-135",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "信息设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 28,
+        "practice": 44
+      },
+      "practiceRate": 61,
+      "weeklyHours": 36,
+      "weeks": 2,
+      "note": null
+    },
+    {
+      "id": "智能交互-136",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "界面设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 28,
+        "practice": 44
+      },
+      "practiceRate": 61,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "智能交互-137",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "交互设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 28,
+        "practice": 44
+      },
+      "practiceRate": 61,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "智能交互-138",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业任选课",
+      "name": "智能产品设计",
+      "credits": 4,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 28,
+        "practice": 44
+      },
+      "practiceRate": 61,
+      "weeklyHours": 24,
+      "weeks": 3,
+      "note": null
+    },
+    {
+      "id": "智能交互-139",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "专产对接课程",
+      "nature": "专业任选课",
+      "name": "专产对接1",
+      "credits": 4,
+      "semester": 7,
+      "hours": {
+        "total": 72,
+        "theory": 28,
+        "practice": 44
+      },
+      "practiceRate": 61,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    },
+    {
+      "id": "智能交互-140",
+      "major": "智能交互设计",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "专产对接课程",
+      "nature": "专业任选课",
+      "name": "专产对接2",
+      "credits": 4,
+      "semester": 7,
+      "hours": {
+        "total": 72,
+        "theory": 28,
+        "practice": 44
+      },
+      "practiceRate": 61,
+      "weeklyHours": 18,
+      "weeks": 4,
+      "note": null
+    }
+  ]
+}
