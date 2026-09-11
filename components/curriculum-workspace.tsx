@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { BookMarked, Check, Download, Filter, Search, SlidersHorizontal } from 'lucide-react';
+import { BookMarked, Download, Filter, Search, SlidersHorizontal } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -81,8 +81,8 @@ export function CurriculumWorkspace({ major }: { major: string }) {
     <>
       <section id="courses" className="section-block">
         <div className="section-heading">
-          <div><span className="section-index">03</span><h2>课程查询</h2></div>
-          <p>数据来自《0001视觉学院数据_已修正.xlsx》，当前为 2026 版。</p>
+          <div><span className="section-index">04</span><h2>完整课程资料</h2></div>
+          <p>在了解四年主线之后，可以按学期和课程性质查看细节。</p>
         </div>
         <div className="course-toolbar">
           <label className="course-search"><Search /><Input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="搜索课程名称或课程组" aria-label="搜索课程" /></label>
@@ -117,24 +117,6 @@ export function CurriculumWorkspace({ major }: { major: string }) {
         {visibleCourses.length > 12 && <Button variant="outline" className="show-more" onClick={() => setShowAll(!showAll)}>{showAll ? '收起课程' : `查看全部 ${visibleCourses.length} 门`}</Button>}
       </section>
 
-      <section id="check" className="section-block check-section">
-        <div className="section-heading light-heading">
-          <div><span className="section-index">04</span><h2>我的学分自查</h2></div>
-          <p>勾选状态只保存在当前浏览器，不需要账号，也不会上传个人数据。</p>
-        </div>
-        <div className="check-grid">
-          <div className="check-score"><span>已标记专业课程</span><strong>{completedCredits.toFixed(1).replace('.0','')}</strong><em>学分</em><small>课程库总计 {libraryCredits.toFixed(1).replace('.0','')} 学分</small></div>
-          <div className="check-progress">
-            <Progress value={Math.min(100, completedCredits / 89 * 100)}>
-              <ProgressLabel>专业课程应修参考进度</ProgressLabel>
-              <ProgressValue>{Math.min(100, completedCredits / 89 * 100).toFixed(0)}%</ProgressValue>
-            </Progress>
-            <p>此进度只统计当前课程表中的专业课程，用于日常自查，不作为毕业审核结果。</p>
-            <a href="#courses">继续标记课程</a>
-          </div>
-        </div>
-      </section>
-
       <section id="faq" className="section-block faq-section">
         <div className="section-heading">
           <div><span className="section-index">05</span><h2>常见问题</h2></div>
@@ -150,6 +132,22 @@ export function CurriculumWorkspace({ major }: { major: string }) {
               </AccordionItem>
             ))}
           </Accordion>
+        </div>
+      </section>
+
+      <section id="check" className="support-section">
+        <div className="support-copy">
+          <span>选课辅助</span>
+          <h2>学分自查</h2>
+          <p>在上面的课程资料中标记已修课程，这里会汇总专业课程学分。记录只保存在当前浏览器。</p>
+        </div>
+        <div className="support-score"><strong>{completedCredits.toFixed(1).replace('.0','')}</strong><span>已标记学分</span><small>当前专业课程库共 {libraryCredits.toFixed(1).replace('.0','')} 学分</small></div>
+        <div className="support-progress">
+          <Progress value={Math.min(100, completedCredits / 89 * 100)}>
+            <ProgressLabel>专业课程应修参考进度</ProgressLabel>
+            <ProgressValue>{Math.min(100, completedCredits / 89 * 100).toFixed(0)}%</ProgressValue>
+          </Progress>
+          <p>仅作日常参考，不作为毕业审核结果。</p>
         </div>
       </section>
 
