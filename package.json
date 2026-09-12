@@ -10,6 +10,7 @@
     "build": "vinext build",
     "build:static": "vite build --config vite.config.static.ts",
     "preview:static": "vite preview --config vite.config.static.ts --port 4188 --host",
+    "deploy": "vite build --config vite.config.static.ts && wrangler pages deploy dist-static --project-name=curriculum --branch=main",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt"
