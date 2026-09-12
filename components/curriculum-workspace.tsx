@@ -1,16 +1,51 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { BookMarked, Download, Filter, Search, SlidersHorizontal } from 'lucide-react';
+import { ArrowUpRight, BookMarked, Download, Filter, Search, SlidersHorizontal } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
-import { Checkbox } from '@/components/ui/checkbox';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { NativeSelect, NativeSelectOption } from '@/components/ui/native-select';
-import { Progress, ProgressLabel, ProgressValue } from '@/components/ui/progress';
 import curriculum from '@/lib/curriculum-data.json';
+import courseDescriptions from '@/lib/course-descriptions.json';
 
 type Course = (typeof curriculum.courses)[number];
+type CourseDescription = { description: string; prerequisite: string; source: string };
+
+const descriptionAliases: Record<string, string> = {
+  人工智能辅助视觉设计: '人工智能与视觉设计工作流',
+  品牌形象系统设计: '视觉识别系统设计',
+  包装与消费体验设计: '包装与用户体验设计',
+  跨媒介品牌传播: '动态叙事与传播',
+  '专产对接实务（一）': '专产对接1',
+  '专产对接实务（二）': '专产对接2',
+  '综合设计 一': '综合设计一',
+  '综合设计 二': '综合设计二',
+  专产对接一: '专产对接1',
+  专产对接二: '专产对接2',
+  web前端应用与开发: 'Web前端应用与开发',
+  传感器技术与应用: '智能交互硬件基础',
+};
+
+function normalizeCourseName(name: string) {
+  return name.toLowerCase().replace(/[\s（）()·—_－-]/g, '');
+}
+
+function findCourseDescription(major: string, courseName: string): CourseDescription | undefined {
+  const catalog = (courseDescriptions as Record<string, Record<string, CourseDescription>>)[major] ?? {};
+  const alias = descriptionAliases[courseName];
+  if (catalog[courseName]) return catalog[courseName];
+  if (alias && catalog[alias]) return catalog[alias];
+  const normalizedTargets = [courseName, alias].filter(Boolean).map((name) => normalizeCourseName(name as string));
+  const localMatch = Object.entries(catalog).find(([name]) => normalizedTargets.includes(normalizeCourseName(name)));
+  if (localMatch) return localMatch[1];
+  for (const otherCatalog of Object.values(courseDescriptions) as Record<string, CourseDescription>[]) {
+    const fallback = Object.entries(otherCatalog).find(([name]) => normalizedTargets.includes(normalizeCourseName(name)));
+    if (fallback) return fallback[1];
+  }
+  return undefined;
+}
 
 const faqs: Record<string, { q: string; a: string }[]> = {
   视觉传达设计: [
@@ -54,30 +89,15 @@ export function CurriculumWorkspace({ major }: { major: string }) {
   const [semester, setSemester] = useState('');
   const [nature, setNature] = useState('');
   const [showAll, setShowAll] = useState(false);
-  const [completed, setCompleted] = useState<string[]>([]);
+  const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
 
   const majorCourses = useMemo(() => curriculum.courses.filter((course) => course.major === major), [major]);
   const visibleCourses = useMemo(() => majorCourses
     .filter((course) => courseMatches(course, search, semester, nature))
     .sort((a, b) => Number(a.semester) - Number(b.semester) || a.name.localeCompare(b.name, 'zh-CN')), [majorCourses, search, semester, nature]);
-  const completedCredits = majorCourses.filter((course) => completed.includes(course.id)).reduce((sum, course) => sum + Number(course.credits), 0);
-  const libraryCredits = majorCourses.reduce((sum, course) => sum + Number(course.credits), 0);
   const natures = [...new Set(majorCourses.map((course) => course.nature))];
   const displayedCourses = visibleCourses.slice(0, showAll ? visibleCourses.length : 12);
   const semesterGroups = [...new Set(displayedCourses.map((course) => Number(course.semester)))].sort((a, b) => a - b);
-
-  useEffect(() => {
-    const saved = window.localStorage.getItem('curriculum-completed');
-    if (saved) setCompleted(JSON.parse(saved));
-  }, []);
-
-  function toggleCourse(id: string, checked: boolean) {
-    setCompleted((current) => {
-      const next = checked ? [...new Set([...current, id])] : current.filter((item) => item !== id);
-      window.localStorage.setItem('curriculum-completed', JSON.stringify(next));
-      return next;
-    });
-  }
 
   useEffect(() => setShowAll(false), [major, search, semester, nature]);
 
@@ -113,7 +133,20 @@ export function CurriculumWorkspace({ major }: { major: string }) {
                 </div>
                 <div className="course-grid">
                   {semesterCourses.map((course) => (
-                    <article className="course-card" key={course.id}>
+                    <article
+                      className="course-card"
+                      key={course.id}
+                      role="button"
+                      tabIndex={0}
+                      aria-label={`查看${course.name}课程介绍`}
+                      onClick={() => setSelectedCourse(course)}
+                      onKeyDown={(event) => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                          event.preventDefault();
+                          setSelectedCourse(course);
+                        }
+                      }}
+                    >
                       <div className="course-card-top"><span>S{course.semester}</span><em>{course.nature}</em></div>
                       <h3>{course.name}</h3>
                       <p>{course.group}</p>
@@ -122,7 +155,7 @@ export function CurriculumWorkspace({ major }: { major: string }) {
                         <span><strong>{course.hours.total}</strong><small>总学时</small></span>
                         <span><strong>{course.practiceRate}%</strong><small>动手占比</small></span>
                       </div>
-                      <label className="course-check"><Checkbox checked={completed.includes(course.id)} onCheckedChange={(checked) => toggleCourse(course.id, checked === true)} /><span>{completed.includes(course.id) ? '已计入我的进度' : '标记为已修'}</span></label>
+                      <div className="course-open"><span>查看课程介绍</span><ArrowUpRight /></div>
                     </article>
                   ))}
                 </div>
@@ -152,22 +185,6 @@ export function CurriculumWorkspace({ major }: { major: string }) {
         </div>
       </section>
 
-      <section id="check" className="support-section">
-        <div className="support-copy">
-          <span>选课辅助</span>
-          <h2>学分自查</h2>
-          <p>在上面的课程资料中标记已修课程，这里会汇总专业课程学分。记录只保存在当前浏览器。</p>
-        </div>
-        <div className="support-score"><strong>{completedCredits.toFixed(1).replace('.0','')}</strong><span>已标记学分</span><small>当前专业课程库共 {libraryCredits.toFixed(1).replace('.0','')} 学分</small></div>
-        <div className="support-progress">
-          <Progress value={Math.min(100, completedCredits / 89 * 100)}>
-            <ProgressLabel>专业课程应修参考进度</ProgressLabel>
-            <ProgressValue>{Math.min(100, completedCredits / 89 * 100).toFixed(0)}%</ProgressValue>
-          </Progress>
-          <p>仅作日常参考，不作为毕业审核结果。</p>
-        </div>
-      </section>
-
       <section className="resources">
         <div><span>原始资料</span><h2>需要完整版本？</h2><p>下载当前专业的新生宣讲材料，核对课程结构与具体要求。</p></div>
         <div className="resource-actions">
@@ -175,6 +192,30 @@ export function CurriculumWorkspace({ major }: { major: string }) {
           <Button nativeButton={false} variant="outline" render={<a href={resources[major].pptx} download />}><Download />下载 PPTX</Button>
         </div>
       </section>
+
+      <Dialog open={selectedCourse !== null} onOpenChange={(open) => { if (!open) setSelectedCourse(null); }}>
+        {selectedCourse && (() => {
+          const detail = findCourseDescription(major, selectedCourse.name);
+          return (
+            <DialogContent className="course-dialog">
+              <DialogHeader>
+                <div className="course-dialog-meta"><span>S{selectedCourse.semester}</span><span>{selectedCourse.nature}</span><span>{selectedCourse.group}</span></div>
+                <DialogTitle>{selectedCourse.name}</DialogTitle>
+                <DialogDescription>
+                  {detail?.description ?? `本课程属于${selectedCourse.group}，安排在第 ${selectedCourse.semester} 学期，共 ${selectedCourse.hours.total} 学时。课程详细介绍将在相应教学大纲完成核定后补充。`}
+                </DialogDescription>
+              </DialogHeader>
+              <dl className="course-dialog-facts">
+                <div><dt>学分</dt><dd>{selectedCourse.credits}</dd></div>
+                <div><dt>总学时</dt><dd>{selectedCourse.hours.total}</dd></div>
+                <div><dt>实践学时占比</dt><dd>{selectedCourse.practiceRate}%</dd></div>
+                {detail?.prerequisite && <div><dt>前修课程</dt><dd>{detail.prerequisite}</dd></div>}
+              </dl>
+              <p className="course-dialog-source">内容依据：{detail?.source ?? '2026 版人才培养方案'}</p>
+            </DialogContent>
+          );
+        })()}
+      </Dialog>
 
       <footer className="site-footer"><span>视觉学院 · 2026 版人才培养方案</span><span>课程数据：2026-09-11 核对版</span></footer>
     </>

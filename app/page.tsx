@@ -90,8 +90,7 @@ export default function Home() {
     <main className="min-h-screen">
       <header className="site-header">
         <a className="brand" href="#top" aria-label="返回首页">
-          <span className="brand-mark">视</span>
-          <span><strong>视觉传达设计学院</strong><small>School of Visual Communication Design</small></span>
+          <img src="/images/svcd.png" alt="视觉传达设计学院" />
         </a>
         <nav aria-label="主导航">
           <a className="active" href="#top">专业介绍</a>
@@ -109,7 +108,6 @@ export default function Home() {
             <p>山东工艺美术学院 · 2026 本科专业导览</p>
             <span>{major.degree} / {major.code}</span>
           </div>
-          <div className="hero-word" aria-hidden="true">VISUAL</div>
           <div className="hero-content">
             <div>
               <p className="major-name">{major.id}</p>
@@ -149,7 +147,7 @@ export default function Home() {
         </section>
 
         <section id="tracks" className="track-section">
-          <div className="track-heading"><span>02</span><p>大三学习方向</p><h2>课程开始汇成自己的作品线</h2></div>
+          <div className="track-heading"><span>02</span><p>大三学习方向</p><h2>专业设置两个学习方向</h2></div>
           <div className="track-grid">
             {major.tracks.map((track, index) => (
               <article key={track.title}>
