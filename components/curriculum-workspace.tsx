@@ -57,10 +57,14 @@ export function CurriculumWorkspace({ major }: { major: string }) {
   const [completed, setCompleted] = useState<string[]>([]);
 
   const majorCourses = useMemo(() => curriculum.courses.filter((course) => course.major === major), [major]);
-  const visibleCourses = useMemo(() => majorCourses.filter((course) => courseMatches(course, search, semester, nature)), [majorCourses, search, semester, nature]);
+  const visibleCourses = useMemo(() => majorCourses
+    .filter((course) => courseMatches(course, search, semester, nature))
+    .sort((a, b) => Number(a.semester) - Number(b.semester) || a.name.localeCompare(b.name, 'zh-CN')), [majorCourses, search, semester, nature]);
   const completedCredits = majorCourses.filter((course) => completed.includes(course.id)).reduce((sum, course) => sum + Number(course.credits), 0);
   const libraryCredits = majorCourses.reduce((sum, course) => sum + Number(course.credits), 0);
   const natures = [...new Set(majorCourses.map((course) => course.nature))];
+  const displayedCourses = visibleCourses.slice(0, showAll ? visibleCourses.length : 12);
+  const semesterGroups = [...new Set(displayedCourses.map((course) => Number(course.semester)))].sort((a, b) => a - b);
 
   useEffect(() => {
     const saved = window.localStorage.getItem('curriculum-completed');
@@ -81,8 +85,8 @@ export function CurriculumWorkspace({ major }: { major: string }) {
     <>
       <section id="courses" className="section-block">
         <div className="section-heading">
-          <div><span className="section-index">04</span><h2>完整课程资料</h2></div>
-          <p>在了解四年主线之后，可以按学期和课程性质查看细节。</p>
+          <div><span className="section-index">04</span><h2>分学期课程资料</h2></div>
+          <p>课程按照开课学期分组，并支持按学期和课程性质进一步筛选。</p>
         </div>
         <div className="course-toolbar">
           <label className="course-search"><Search /><Input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="搜索课程名称或课程组" aria-label="搜索课程" /></label>
@@ -98,20 +102,33 @@ export function CurriculumWorkspace({ major }: { major: string }) {
         </div>
 
         <div className="course-summary"><Filter /><span>找到 <strong>{visibleCourses.length}</strong> 门课程</span><small>{majorCourses.length} 门纳入当前专业课程库</small></div>
-        <div className="course-grid">
-          {visibleCourses.slice(0, showAll ? visibleCourses.length : 12).map((course) => (
-            <article className="course-card" key={course.id}>
-              <div className="course-card-top"><span>S{course.semester}</span><em>{course.nature}</em></div>
-              <h3>{course.name}</h3>
-              <p>{course.group}</p>
-              <div className="course-metrics">
-                <span><strong>{course.credits}</strong><small>学分</small></span>
-                <span><strong>{course.hours.total}</strong><small>总学时</small></span>
-                <span><strong>{course.practiceRate}%</strong><small>动手占比</small></span>
-              </div>
-              <label className="course-check"><Checkbox checked={completed.includes(course.id)} onCheckedChange={(checked) => toggleCourse(course.id, checked === true)} /><span>{completed.includes(course.id) ? '已计入我的进度' : '标记为已修'}</span></label>
-            </article>
-          ))}
+        <div className="course-groups">
+          {semesterGroups.map((semesterNumber) => {
+            const semesterCourses = displayedCourses.filter((course) => Number(course.semester) === semesterNumber);
+            return (
+              <section className="course-semester-group" key={semesterNumber} aria-labelledby={`semester-${semesterNumber}`}>
+                <div className="course-semester-heading">
+                  <div><span>S{semesterNumber}</span><h3 id={`semester-${semesterNumber}`}>第 {semesterNumber} 学期</h3></div>
+                  <small>{semesterCourses.length} 门课程</small>
+                </div>
+                <div className="course-grid">
+                  {semesterCourses.map((course) => (
+                    <article className="course-card" key={course.id}>
+                      <div className="course-card-top"><span>S{course.semester}</span><em>{course.nature}</em></div>
+                      <h3>{course.name}</h3>
+                      <p>{course.group}</p>
+                      <div className="course-metrics">
+                        <span><strong>{course.credits}</strong><small>学分</small></span>
+                        <span><strong>{course.hours.total}</strong><small>总学时</small></span>
+                        <span><strong>{course.practiceRate}%</strong><small>动手占比</small></span>
+                      </div>
+                      <label className="course-check"><Checkbox checked={completed.includes(course.id)} onCheckedChange={(checked) => toggleCourse(course.id, checked === true)} /><span>{completed.includes(course.id) ? '已计入我的进度' : '标记为已修'}</span></label>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
         </div>
         {visibleCourses.length === 0 && <div className="empty-state"><SlidersHorizontal /><h3>没有符合条件的课程</h3><p>试试清除一个筛选条件。</p></div>}
         {visibleCourses.length > 12 && <Button variant="outline" className="show-more" onClick={() => setShowAll(!showAll)}>{showAll ? '收起课程' : `查看全部 ${visibleCourses.length} 门`}</Button>}
