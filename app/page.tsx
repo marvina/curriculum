@@ -79,39 +79,127 @@ const majors = [
     outcomes: ['能完成用户研究到高保真原型的流程', '能结合软件、传感器与智能技术', '能用测试数据持续改进体验'],
     careers: ['UX 工程', '智能产品设计', '座舱 HMI', 'XR 体验', '数字政务与公共服务'],
   },
+  {
+    id: '时尚设计与传播', short: '时尚', degree: '四年制艺术类 · 艺术学学士', code: '130502',
+    headline: '以时尚为媒介，\n连接文化与商业',
+    description: '立足时尚产业与品牌传播，从视觉感知、时尚画册与型录、文化衍生品出发，深度融合新媒体、活动策划与 AI 辅助设计。你会将时尚创意转化为兼具文化内涵与商业价值的视觉传播方案。',
+    abilities: ['时尚视觉', '品牌传播', '文创衍生', '数字媒介'],
+    years: [
+      ['造型感知', '掌握造型基础与形式审美', '通过通识课程与形式感知训练，建立观察、造型与传统文化采风实践能力。'],
+      ['专业基础', '建立时尚表达与设计思维', '围绕图形、色彩、文字版式、AI辅助设计与经略海洋低碳课程，形成扎实的专业能力基础。'],
+      ['方向深化', '深化时尚媒介与品牌实践', '在时尚品牌传播、画册型录、IP衍生与文化工作坊中确定发展重心，完成系统项目。'],
+      ['产业实践', '专产对接与综合毕业创作', '通过企业专产对接、毕业考察与毕业设计，完成兼具创新意识与商业落地价值的成果体系。'],
+    ],
+    tracks: [
+      { title: '时尚品牌与媒介传播', question: '怎样让一个时尚品牌深入人心？', study: '时尚画册与型录、标志设计、商业视觉与推广、新媒体传播、时尚品牌策划', output: '一套完整的时尚品牌策划与跨媒介传播方案' },
+      { title: '时尚视觉与文创衍生', question: '怎样将时尚创意落地为真实产品？', study: '插画语言、包装设计、IP形象设计、时尚文化衍生品、交互体验设计', output: '系列化时尚文创衍生品或数字化时尚交互原型' },
+    ],
+    outcomes: ['能独立完成时尚品牌与型录画册策划', '能将文化资源转化为时尚衍生品', '能运用数字媒体与AI技术开展时尚传播'],
+    careers: ['时尚品牌设计', '时尚出版与型录设计', '文创与IP衍生研发', '活动策划与商业美陈', '时尚新媒体运营'],
+  },
 ] as const;
 
 export default function Home() {
-  const [level, setLevel] = useState<'undergraduate' | 'graduate'>('undergraduate');
-  const [majorName, setMajorName] = useState<(typeof majors)[number]['id']>('视觉传达设计');
+  const [level, setLevel] = useState<'undergraduate' | 'graduate'>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('level') === 'graduate') return 'graduate';
+    }
+    return 'undergraduate';
+  });
+  const [majorName, setMajorName] = useState<(typeof majors)[number]['id']>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const m = params.get('major');
+      if (m && majors.some((item) => item.id === m)) return m as (typeof majors)[number]['id'];
+    }
+    return '视觉传达设计';
+  });
   const major = majors.find((item) => item.id === majorName) ?? majors[0];
   const majorCourses = useMemo(() => curriculum.courses.filter((course) => course.major === major.id), [major.id]);
 
   return (
     <main className="min-h-screen">
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="返回首页">
-          <img src="/images/svcd.png" alt="视觉传达设计学院" />
-        </a>
-        <nav className="degree-nav" aria-label="培养层次">
-          <button className={level === 'undergraduate' ? 'active' : ''} aria-pressed={level === 'undergraduate'} onClick={() => setLevel('undergraduate')}>本科</button>
-          <button className={level === 'graduate' ? 'active' : ''} aria-pressed={level === 'graduate'} onClick={() => setLevel('graduate')}>研究生</button>
-        </nav>
+        <div className="site-header-inner">
+          <div className="brand-title">
+            <a className="brand-logo-link" href="https://visual.sdada.edu.cn" target="_blank" rel="noreferrer" title="访问视觉传达设计学院官网" aria-label="视觉传达设计学院官网">
+              <img src="./images/svcd.png" alt="视觉传达设计学院" className="brand-logo-img" />
+            </a>
+            <div className="brand-divider" aria-hidden="true" />
+            <div className="brand-text">
+              <a
+                className="brand-catalog-link"
+                href="#top"
+                onClick={(e) => {
+                  if (level !== 'undergraduate') setLevel('undergraduate');
+                  const el = document.getElementById('top');
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                aria-label="返回课程目录首页"
+                title="返回课程目录首页"
+              >
+                <span className="brand-catalog-title">课程目录</span>
+                <span className="brand-catalog-sub">2026 人才培养方案专业课程导览</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="header-actions">
+            <nav className="degree-tabs" aria-label="培养层次">
+              <button
+                type="button"
+                className={`degree-tab ${level === 'undergraduate' ? 'active' : ''}`}
+                aria-pressed={level === 'undergraduate'}
+                onClick={() => setLevel('undergraduate')}
+              >
+                本科
+              </button>
+              <button
+                type="button"
+                className={`degree-tab ${level === 'graduate' ? 'active' : ''}`}
+                aria-pressed={level === 'graduate'}
+                onClick={() => setLevel('graduate')}
+              >
+                研究生
+              </button>
+            </nav>
+            <a
+              className="nav-btn"
+              href="https://visual.sdada.edu.cn/kczl.htm"
+              target="_blank"
+              rel="noreferrer"
+              title="前往课程教学周历系统"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              <span>课程周历</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{ opacity: 0.65 }}>
+                <path d="M7 17l9.2-9.2M17 17V8H8" />
+              </svg>
+            </a>
+          </div>
+        </div>
       </header>
 
       {level === 'undergraduate' ? <div id="top" className="page-shell">
         <section className="intro">
-          <img className="hero-image" src="/images/curriculum-hero-v1.png" alt="" />
+          <img className="hero-image" src="./images/curriculum-hero-v1.png" alt="" />
           <div className="hero-topline">
             <p>山东工艺美术学院 · 2026 本科专业导览</p>
             <span>{major.degree} / {major.code}</span>
           </div>
           <div className="hero-content">
             <div>
-              <p className="major-name">{major.id}</p>
-              <h1>{major.headline.split('\n').map((line) => <span key={line}>{line}</span>)}</h1>
+              <h1>{major.id}</h1>
+              <p className="intro-copy">{major.description}</p>
             </div>
-            <p className="intro-copy">{major.description}</p>
           </div>
           <span className="hero-year">2026</span>
         </section>
@@ -121,7 +209,6 @@ export default function Home() {
             <span>选择专业 / SELECT MAJOR</span>
             <div>
               {majors.map((item) => <button key={item.id} className={majorName === item.id ? 'selected' : ''} onClick={() => setMajorName(item.id)}><small>0{majors.indexOf(item) + 1}</small>{item.id}</button>)}
-              <button className="placeholder" type="button" disabled title="时尚传播设计内容筹备中"><small>05</small>时尚传播设计</button>
             </div>
           </div>
           <a href="#journey">看四年怎么学<ArrowDown /></a>

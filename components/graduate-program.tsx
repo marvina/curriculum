@@ -23,17 +23,17 @@ export function GraduateProgram() {
   return (
     <div id="top" className="page-shell graduate-page-shell">
       <section className="intro graduate-hero">
-        <img className="hero-image" src="/images/graduate-hero-v1.png" alt="" />
+        <img className="hero-image" src="./images/graduate-hero-v2.png" alt="" />
         <div className="hero-topline">
           <p>山东工艺美术学院 · 2026 硕士研究生培养方案</p>
           <span>{direction.degree} / {direction.code}</span>
         </div>
-        <div className="hero-content">
+        <div className="hero-content graduate-hero-content">
           <div>
             <p className="major-name">{direction.program}</p>
             <h1>{direction.id}</h1>
+            <p className="intro-copy">{direction.description}</p>
           </div>
-          <p className="intro-copy">{direction.description}</p>
         </div>
         <span className="hero-year">2026</span>
       </section>

@@ -2800,6 +2800,846 @@
       "weeklyHours": 18,
       "weeks": 4,
       "note": null
+    },
+    {
+      "id": "时尚-1",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "设计思维课程",
+      "nature": "专业必修课",
+      "name": "学科与专业导论",
+      "credits": 0.5,
+      "semester": 1,
+      "hours": {
+        "total": 8,
+        "theory": 8,
+        "practice": 0
+      },
+      "practiceRate": 0,
+      "weeklyHours": 8,
+      "weeks": 1,
+      "note": null
+    },
+    {
+      "id": "时尚-2",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "设计思维课程",
+      "nature": "专业必修课",
+      "name": "图形创意思维",
+      "credits": 3.0,
+      "semester": 2,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 3,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-3",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "设计思维课程",
+      "nature": "专业必修课",
+      "name": "活动设计与传播",
+      "credits": 2.0,
+      "semester": 3,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 2,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-4",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "感知表达课程",
+      "nature": "专业必修课",
+      "name": "形式基础",
+      "credits": 4.0,
+      "semester": 1,
+      "hours": {
+        "total": 72,
+        "theory": 16,
+        "practice": 56
+      },
+      "practiceRate": 78,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-5",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "感知表达课程",
+      "nature": "专业必修课",
+      "name": "视觉感知与色彩表达",
+      "credits": 3.0,
+      "semester": 2,
+      "hours": {
+        "total": 54,
+        "theory": 12,
+        "practice": 42
+      },
+      "practiceRate": 78,
+      "weeklyHours": 3,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-6",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "感知表达课程",
+      "nature": "专业必修课",
+      "name": "传统文化采风",
+      "credits": 2.0,
+      "semester": 2,
+      "hours": {
+        "total": 36,
+        "theory": 12,
+        "practice": 24
+      },
+      "practiceRate": 67,
+      "weeklyHours": 2,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-7",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "设计经略海洋课程",
+      "nature": "专业必修课",
+      "name": "海洋认知与低碳设计",
+      "credits": 2.0,
+      "semester": 2,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 2,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-8",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "设计经略海洋课程",
+      "nature": "专业必修课",
+      "name": "设计商学",
+      "credits": 2.0,
+      "semester": 2,
+      "hours": {
+        "total": 36,
+        "theory": 14,
+        "practice": 22
+      },
+      "practiceRate": 61,
+      "weeklyHours": 2,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-9",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "文字信息课程",
+      "nature": "专业必修课",
+      "name": "文字与版式设计",
+      "credits": 4.0,
+      "semester": 3,
+      "hours": {
+        "total": 72,
+        "theory": 14,
+        "practice": 58
+      },
+      "practiceRate": 81,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-10",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "文字信息课程",
+      "nature": "专业必修课",
+      "name": "字体创意呈现",
+      "credits": 5.0,
+      "semester": 3,
+      "hours": {
+        "total": 90,
+        "theory": 16,
+        "practice": 74
+      },
+      "practiceRate": 82,
+      "weeklyHours": 5,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-11",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业必修课程群",
+      "group": "人工智能课程",
+      "nature": "专业必修课",
+      "name": "人工智能辅助视觉设计",
+      "credits": 2.5,
+      "semester": 3,
+      "hours": {
+        "total": 46,
+        "theory": 14,
+        "practice": 32
+      },
+      "practiceRate": 70,
+      "weeklyHours": 2,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-12",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "插画语言与风格",
+      "credits": 3.0,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 3,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-13",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "包装设计与传播",
+      "credits": 3.0,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 3,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-14",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "招贴创意与呈现",
+      "credits": 3.0,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 3,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-15",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "时尚画册与型录",
+      "credits": 3.0,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 3,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-16",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "IP形象设计",
+      "credits": 3.0,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 3,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-17",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "广告设计与传播",
+      "credits": 3.0,
+      "semester": 4,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 3,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-18",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "标志设计",
+      "credits": 4.0,
+      "semester": 4,
+      "hours": {
+        "total": 72,
+        "theory": 14,
+        "practice": 58
+      },
+      "practiceRate": 81,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-19",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "商业视觉与推广",
+      "credits": 4.0,
+      "semester": 4,
+      "hours": {
+        "total": 72,
+        "theory": 14,
+        "practice": 58
+      },
+      "practiceRate": 81,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-20",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "时尚文化衍生品设计",
+      "credits": 5.0,
+      "semester": 5,
+      "hours": {
+        "total": 90,
+        "theory": 8,
+        "practice": 82
+      },
+      "practiceRate": 91,
+      "weeklyHours": 5,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-21",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "交互设计",
+      "credits": 5.0,
+      "semester": 5,
+      "hours": {
+        "total": 90,
+        "theory": 8,
+        "practice": 82
+      },
+      "practiceRate": 91,
+      "weeklyHours": 5,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-22",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "视觉识别设计",
+      "credits": 4.0,
+      "semester": 5,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-23",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "信息设计",
+      "credits": 4.0,
+      "semester": 5,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-24",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "时尚品牌策划与传播",
+      "credits": 4.0,
+      "semester": 5,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-25",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "时尚设计与传播课程组",
+      "nature": "专业限选课",
+      "name": "新媒体传播",
+      "credits": 4.0,
+      "semester": 5,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-26",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "专业考察1",
+      "credits": 2.0,
+      "semester": 5,
+      "hours": {
+        "total": 36,
+        "theory": 8,
+        "practice": 28
+      },
+      "practiceRate": 78,
+      "weeklyHours": 2,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-27",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "专业考察2",
+      "credits": 2.0,
+      "semester": 5,
+      "hours": {
+        "total": 36,
+        "theory": 8,
+        "practice": 28
+      },
+      "practiceRate": 78,
+      "weeklyHours": 2,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-28",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "社会设计工作坊",
+      "credits": 3.0,
+      "semester": 5,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 3,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-29",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "视觉文化工作坊",
+      "credits": 3.0,
+      "semester": 5,
+      "hours": {
+        "total": 54,
+        "theory": 14,
+        "practice": 40
+      },
+      "practiceRate": 74,
+      "weeklyHours": 3,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-30",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "竞赛工作坊",
+      "credits": 4.0,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-31",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "专业限选课程群",
+      "group": "综合实践与职业转化课程",
+      "nature": "专业限选课",
+      "name": "作品集与职业转化工作坊",
+      "credits": 4.0,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 8,
+        "practice": 64
+      },
+      "practiceRate": 89,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-32",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业选修课",
+      "name": "视觉表现方法",
+      "credits": 4.0,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-33",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业选修课",
+      "name": "字体应用设计",
+      "credits": 4.0,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-34",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业选修课",
+      "name": "时尚标志设计",
+      "credits": 4.0,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-35",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "跨专业交叉课程",
+      "nature": "专业选修课",
+      "name": "时尚衍生品设计",
+      "credits": 4.0,
+      "semester": 6,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-36",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "专产对接课程",
+      "nature": "专业选修课",
+      "name": "专产对接事务1",
+      "credits": 4.0,
+      "semester": 7,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-37",
+      "major": "时尚设计与传播",
+      "module": "专业教育模组",
+      "system": "跨专业交叉任选课程群",
+      "group": "专产对接课程",
+      "nature": "专业选修课",
+      "name": "专产对接事务2",
+      "credits": 4.0,
+      "semester": 7,
+      "hours": {
+        "total": 72,
+        "theory": 18,
+        "practice": 54
+      },
+      "practiceRate": 75,
+      "weeklyHours": 4,
+      "weeks": 18,
+      "note": null
+    },
+    {
+      "id": "时尚-38",
+      "major": "时尚设计与传播",
+      "module": "综合实践模组",
+      "system": "专业实践课程群",
+      "group": "假期课堂",
+      "nature": "专业实践课",
+      "name": "假期课堂Ⅰ（社会调查）",
+      "credits": 1.0,
+      "semester": 5,
+      "hours": {
+        "total": 0,
+        "theory": 0,
+        "practice": 0
+      },
+      "practiceRate": 0,
+      "weeklyHours": 0,
+      "weeks": 1,
+      "note": null
+    },
+    {
+      "id": "时尚-39",
+      "major": "时尚设计与传播",
+      "module": "综合实践模组",
+      "system": "专业实践课程群",
+      "group": "假期课堂",
+      "nature": "专业实践课",
+      "name": "假期课堂Ⅱ（企业实践/实习/工作坊/合作项目等）",
+      "credits": 2.0,
+      "semester": 6,
+      "hours": {
+        "total": 0,
+        "theory": 0,
+        "practice": 0
+      },
+      "practiceRate": 0,
+      "weeklyHours": 0,
+      "weeks": 1,
+      "note": null
+    },
+    {
+      "id": "时尚-40",
+      "major": "时尚设计与传播",
+      "module": "综合实践模组",
+      "system": "专业实践课程群",
+      "group": "毕业实践课程",
+      "nature": "专业实践课",
+      "name": "毕业考察",
+      "credits": 2.0,
+      "semester": 7,
+      "hours": {
+        "total": 0,
+        "theory": 0,
+        "practice": 0
+      },
+      "practiceRate": 0,
+      "weeklyHours": 0,
+      "weeks": 1,
+      "note": null
+    },
+    {
+      "id": "时尚-41",
+      "major": "时尚设计与传播",
+      "module": "综合实践模组",
+      "system": "专业实践课程群",
+      "group": "毕业实践课程",
+      "nature": "专业实践课",
+      "name": "毕业设计（创作）",
+      "credits": 8.0,
+      "semester": 7,
+      "hours": {
+        "total": 0,
+        "theory": 0,
+        "practice": 0
+      },
+      "practiceRate": 0,
+      "weeklyHours": 0,
+      "weeks": 1,
+      "note": null
+    },
+    {
+      "id": "时尚-42",
+      "major": "时尚设计与传播",
+      "module": "综合实践模组",
+      "system": "专业实践课程群",
+      "group": "毕业实践课程",
+      "nature": "专业实践课",
+      "name": "毕业论文",
+      "credits": 4.0,
+      "semester": 8,
+      "hours": {
+        "total": 0,
+        "theory": 0,
+        "practice": 0
+      },
+      "practiceRate": 0,
+      "weeklyHours": 0,
+      "weeks": 1,
+      "note": null
     }
   ]
 }
