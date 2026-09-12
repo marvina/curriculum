@@ -104,6 +104,7 @@ export default function Home() {
 
       <div id="top" className="page-shell">
         <section className="intro">
+          <img className="hero-image" src="/images/curriculum-hero-v1.png" alt="" />
           <div className="hero-topline">
             <p>山东工艺美术学院 · 2026 本科专业导览</p>
             <span>{major.degree} / {major.code}</span>
