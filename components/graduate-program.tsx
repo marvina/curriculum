@@ -31,7 +31,7 @@ export function GraduateProgram() {
         <div className="hero-content">
           <div>
             <p className="major-name">{direction.program}</p>
-            <h1>{direction.headline}</h1>
+            <h1>{direction.id}</h1>
           </div>
           <p className="intro-copy">{direction.description}</p>
         </div>
