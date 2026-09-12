@@ -121,7 +121,10 @@ export default function Home() {
         <section className="professional-intro" aria-label="选择专业">
           <div className="major-picker" role="group" aria-label="选择你想了解的专业">
             <span>选择专业 / SELECT MAJOR</span>
-            <div>{majors.map((item) => <button key={item.id} className={majorName === item.id ? 'selected' : ''} onClick={() => setMajorName(item.id)}><small>0{majors.indexOf(item) + 1}</small>{item.id}</button>)}</div>
+            <div>
+              {majors.map((item) => <button key={item.id} className={majorName === item.id ? 'selected' : ''} onClick={() => setMajorName(item.id)}><small>0{majors.indexOf(item) + 1}</small>{item.id}</button>)}
+              <button className="placeholder" type="button" disabled title="时尚传播设计内容筹备中"><small>05</small>时尚传播设计</button>
+            </div>
           </div>
           <a href="#journey">看四年怎么学<ArrowDown /></a>
         </section>
