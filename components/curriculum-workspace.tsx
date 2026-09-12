@@ -84,6 +84,34 @@ function courseMatches(course: Course, search: string, semester: string, nature:
     (!nature || course.nature === nature);
 }
 
+function CourseCard({ course, onSelect }: { course: Course; onSelect: (course: Course) => void }) {
+  return (
+    <article
+      className="course-card"
+      role="button"
+      tabIndex={0}
+      aria-label={`查看${course.name}课程介绍`}
+      onClick={() => onSelect(course)}
+      onKeyDown={(event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          onSelect(course);
+        }
+      }}
+    >
+      <div className="course-card-top"><span>S{course.semester}</span><em>{course.nature}</em></div>
+      <h3>{course.name}</h3>
+      <p>{course.group}</p>
+      <div className="course-metrics">
+        <span><strong>{course.credits}</strong><small>学分</small></span>
+        <span><strong>{course.hours.total}</strong><small>总学时</small></span>
+        <span><strong>{course.practiceRate}%</strong><small>动手占比</small></span>
+      </div>
+      <div className="course-open"><span>查看课程介绍</span><ArrowUpRight /></div>
+    </article>
+  );
+}
+
 export function CurriculumWorkspace({ major }: { major: string }) {
   const [search, setSearch] = useState('');
   const [semester, setSemester] = useState('');
@@ -125,40 +153,38 @@ export function CurriculumWorkspace({ major }: { major: string }) {
         <div className="course-groups">
           {semesterGroups.map((semesterNumber) => {
             const semesterCourses = displayedCourses.filter((course) => Number(course.semester) === semesterNumber);
+            const courseGroupOrder = [...new Set(majorCourses
+              .filter((course) => Number(course.semester) === semesterNumber)
+              .map((course) => course.group))];
+            const courseGroups = courseGroupOrder
+              .map((group) => ({ group, courses: semesterCourses.filter((course) => course.group === group) }))
+              .filter((item) => item.courses.length > 0);
+            const showCourseGroups = semesterNumber >= 4 && courseGroups.length > 1;
             return (
               <section className="course-semester-group" key={semesterNumber} aria-labelledby={`semester-${semesterNumber}`}>
                 <div className="course-semester-heading">
                   <div><span>S{semesterNumber}</span><h3 id={`semester-${semesterNumber}`}>第 {semesterNumber} 学期</h3></div>
                   <small>{semesterCourses.length} 门课程</small>
                 </div>
-                <div className="course-grid">
-                  {semesterCourses.map((course) => (
-                    <article
-                      className="course-card"
-                      key={course.id}
-                      role="button"
-                      tabIndex={0}
-                      aria-label={`查看${course.name}课程介绍`}
-                      onClick={() => setSelectedCourse(course)}
-                      onKeyDown={(event) => {
-                        if (event.key === 'Enter' || event.key === ' ') {
-                          event.preventDefault();
-                          setSelectedCourse(course);
-                        }
-                      }}
-                    >
-                      <div className="course-card-top"><span>S{course.semester}</span><em>{course.nature}</em></div>
-                      <h3>{course.name}</h3>
-                      <p>{course.group}</p>
-                      <div className="course-metrics">
-                        <span><strong>{course.credits}</strong><small>学分</small></span>
-                        <span><strong>{course.hours.total}</strong><small>总学时</small></span>
-                        <span><strong>{course.practiceRate}%</strong><small>动手占比</small></span>
-                      </div>
-                      <div className="course-open"><span>查看课程介绍</span><ArrowUpRight /></div>
-                    </article>
-                  ))}
-                </div>
+                {showCourseGroups ? (
+                  <div className="course-direction-groups">
+                    {courseGroups.map((item, groupIndex) => (
+                      <section className="course-direction-group" key={item.group} aria-labelledby={`semester-${semesterNumber}-group-${groupIndex}`}>
+                        <div className="course-direction-heading">
+                          <div><span>课程组 0{groupIndex + 1}</span><h4 id={`semester-${semesterNumber}-group-${groupIndex}`}>{item.group}</h4></div>
+                          <small>{item.courses.length} 门课程</small>
+                        </div>
+                        <div className="course-grid">
+                          {item.courses.map((course) => <CourseCard course={course} onSelect={setSelectedCourse} key={course.id} />)}
+                        </div>
+                      </section>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="course-grid">
+                    {semesterCourses.map((course) => <CourseCard course={course} onSelect={setSelectedCourse} key={course.id} />)}
+                  </div>
+                )}
               </section>
             );
           })}
