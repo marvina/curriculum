@@ -23,7 +23,7 @@ export function GraduateProgram() {
   return (
     <div id="top" className="page-shell graduate-page-shell">
       <section className="intro graduate-hero">
-        <img className="hero-image" src="/images/curriculum-hero-v1.png" alt="" />
+        <img className="hero-image" src="/images/graduate-hero-v1.png" alt="" />
         <div className="hero-topline">
           <p>山东工艺美术学院 · 2026 硕士研究生培养方案</p>
           <span>{direction.degree} / {direction.code}</span>
