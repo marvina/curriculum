@@ -75,12 +75,12 @@ const faqs: Record<string, { q: string; a: string }[]> = {
   ],
 };
 
-const resources: Record<string, { pdf: string; pptx: string }> = {
-  视觉传达设计: { pdf: './downloads/视觉传达设计专业2026级新生人才培养方案宣讲.pdf', pptx: './downloads/视觉传达设计专业2026级新生人才培养方案宣讲.pptx' },
-  数字媒体艺术: { pdf: './downloads/数字媒体艺术专业2026级新生人才培养方案宣讲.pdf', pptx: './downloads/数字媒体艺术专业2026级新生人才培养方案宣讲.pptx' },
-  包装设计: { pdf: './downloads/包装设计专业2026级新生人才培养方案宣讲.pdf', pptx: './downloads/包装设计专业2026级新生人才培养方案宣讲.pptx' },
-  智能交互设计: { pdf: './downloads/智能交互设计专业2026级新生人才培养方案宣讲.pdf', pptx: './downloads/智能交互设计专业2026级新生人才培养方案宣讲.pptx' },
-  时尚设计与传播: { pdf: './downloads/视觉传达设计专业2026级新生人才培养方案宣讲.pdf', pptx: './downloads/视觉传达设计专业2026级新生人才培养方案宣讲.pptx' },
+const resources: Record<string, { pdf: string }> = {
+  视觉传达设计: { pdf: './downloads/视觉传达设计专业2026级新生人才培养方案宣讲.pdf' },
+  数字媒体艺术: { pdf: './downloads/数字媒体艺术专业2026级新生人才培养方案宣讲.pdf' },
+  包装设计: { pdf: './downloads/包装设计专业2026级新生人才培养方案宣讲.pdf' },
+  智能交互设计: { pdf: './downloads/智能交互设计专业2026级新生人才培养方案宣讲.pdf' },
+  时尚设计与传播: { pdf: './downloads/视觉传达设计专业2026级新生人才培养方案宣讲.pdf' },
 };
 
 function courseMatches(course: Course, search: string, semester: string, nature: string) {
@@ -221,7 +221,6 @@ export function CurriculumWorkspace({ major }: { major: string }) {
         <div><span>原始资料</span><h2>需要完整版本？</h2><p>下载当前专业的新生宣讲材料，核对课程结构与具体要求。</p></div>
         <div className="resource-actions">
           <Button nativeButton={false} render={<a href={resources[major].pdf} download />}><Download />下载 PDF</Button>
-          <Button nativeButton={false} variant="outline" render={<a href={resources[major].pptx} download />}><Download />下载 PPTX</Button>
         </div>
       </section>
 
@@ -249,7 +248,11 @@ export function CurriculumWorkspace({ major }: { major: string }) {
         })()}
       </Dialog>
 
-      <footer className="site-footer"><span>视觉学院 · 2026 版人才培养方案</span><span>课程数据：2026-09-11 核对版</span></footer>
+      <footer className="site-footer">
+        <a href="https://visual.sdada.edu.cn" target="_blank" rel="noreferrer">
+          山东工艺美术学院 视觉传达设计学院
+        </a>
+      </footer>
     </>
   );
 }

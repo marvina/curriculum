@@ -124,7 +124,12 @@ export function GraduateProgram() {
         <p className="graduate-source-note">资料依据：{direction.source}。空白专业选修课和一般选修课以导师指导及学校当学期课程安排为准。</p>
       </section>
 
-      <footer className="site-footer"><span>视觉学院 · 2026 版研究生培养方案</span><span>当前方向：{direction.id}</span></footer>
+      <footer className="site-footer">
+        <a href="https://visual.sdada.edu.cn" target="_blank" rel="noreferrer">
+          山东工艺美术学院 视觉传达设计学院
+        </a>
+        <span>当前方向：{direction.id}</span>
+      </footer>
     </div>
   );
 }
