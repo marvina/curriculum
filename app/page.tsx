@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { ArrowDown, ArrowRight, GraduationCap, Search } from 'lucide-react';
+import { ArrowDown, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CurriculumWorkspace } from '@/components/curriculum-workspace';
 import curriculum from '@/lib/curriculum-data.json';
@@ -90,8 +90,8 @@ export default function Home() {
     <main className="min-h-screen">
       <header className="site-header">
         <a className="brand" href="#top" aria-label="返回首页">
-          <span className="brand-mark"><GraduationCap size={19} /></span>
-          <span><strong>视觉学院</strong><small>2026 专业与课程</small></span>
+          <span className="brand-mark">视</span>
+          <span><strong>视觉传达设计学院</strong><small>School of Visual Communication Design</small></span>
         </a>
         <nav aria-label="主导航">
           <a className="active" href="#top">专业介绍</a>
@@ -104,21 +104,27 @@ export default function Home() {
 
       <div id="top" className="page-shell">
         <section className="intro">
-          <div>
-            <p className="eyebrow">山东工艺美术学院 · 视觉学院</p>
-            <p className="major-name">{major.id}</p>
-            <h1>{major.headline.split('\n').map((line) => <span key={line}>{line}</span>)}</h1>
+          <div className="hero-topline">
+            <p>山东工艺美术学院 · 2026 本科专业导览</p>
+            <span>{major.degree} / {major.code}</span>
+          </div>
+          <div className="hero-word" aria-hidden="true">VISUAL</div>
+          <div className="hero-content">
+            <div>
+              <p className="major-name">{major.id}</p>
+              <h1>{major.headline.split('\n').map((line) => <span key={line}>{line}</span>)}</h1>
+            </div>
             <p className="intro-copy">{major.description}</p>
           </div>
-          <div className="major-picker" role="group" aria-label="选择专业">
-            <span>选择你想了解的专业</span>
-            <div>{majors.map((item) => <button key={item.id} className={majorName === item.id ? 'selected' : ''} onClick={() => setMajorName(item.id)}>{item.short}</button>)}</div>
-          </div>
+          <div className="ability-list">{major.abilities.map((ability, index) => <span key={ability}><em>0{index + 1}</em>{ability}</span>)}</div>
+          <span className="hero-year">2026</span>
         </section>
 
-        <section className="professional-intro" aria-label={`${major.id}专业概览`}>
-          <div className="degree-meta"><span>{major.degree}</span><span>专业代码 {major.code}</span></div>
-          <div className="ability-list">{major.abilities.map((ability, index) => <span key={ability}><em>0{index + 1}</em>{ability}</span>)}</div>
+        <section className="professional-intro" aria-label="选择专业">
+          <div className="major-picker" role="group" aria-label="选择你想了解的专业">
+            <span>选择专业 / SELECT MAJOR</span>
+            <div>{majors.map((item) => <button key={item.id} className={majorName === item.id ? 'selected' : ''} onClick={() => setMajorName(item.id)}><small>0{majors.indexOf(item) + 1}</small>{item.id}</button>)}</div>
+          </div>
           <a href="#journey">看四年怎么学<ArrowDown /></a>
         </section>
 
