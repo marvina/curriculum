@@ -1,9 +1,9 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { ArrowDown, Search } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { ArrowDown } from 'lucide-react';
 import { CurriculumWorkspace } from '@/components/curriculum-workspace';
+import { GraduateProgram } from '@/components/graduate-program';
 import curriculum from '@/lib/curriculum-data.json';
 
 const majors = [
@@ -82,6 +82,7 @@ const majors = [
 ] as const;
 
 export default function Home() {
+  const [level, setLevel] = useState<'undergraduate' | 'graduate'>('undergraduate');
   const [majorName, setMajorName] = useState<(typeof majors)[number]['id']>('视觉传达设计');
   const major = majors.find((item) => item.id === majorName) ?? majors[0];
   const majorCourses = useMemo(() => curriculum.courses.filter((course) => course.major === major.id), [major.id]);
@@ -92,16 +93,13 @@ export default function Home() {
         <a className="brand" href="#top" aria-label="返回首页">
           <img src="/images/svcd.png" alt="视觉传达设计学院" />
         </a>
-        <nav aria-label="主导航">
-          <a className="active" href="#top">专业介绍</a>
-          <a href="#journey">四年课程</a>
-          <a href="#tracks">学习方向</a>
-          <a href="#courses">课程资料</a>
+        <nav className="degree-nav" aria-label="培养层次">
+          <button className={level === 'undergraduate' ? 'active' : ''} aria-pressed={level === 'undergraduate'} onClick={() => setLevel('undergraduate')}>本科</button>
+          <button className={level === 'graduate' ? 'active' : ''} aria-pressed={level === 'graduate'} onClick={() => setLevel('graduate')}>研究生</button>
         </nav>
-        <Button nativeButton={false} variant="outline" className="search-button" render={<a href="#courses" />}><Search />查课程</Button>
       </header>
 
-      <div id="top" className="page-shell">
+      {level === 'undergraduate' ? <div id="top" className="page-shell">
         <section className="intro">
           <img className="hero-image" src="/images/curriculum-hero-v1.png" alt="" />
           <div className="hero-topline">
@@ -172,7 +170,7 @@ export default function Home() {
         </section>
 
         <CurriculumWorkspace major={major.id} />
-      </div>
+      </div> : <GraduateProgram />}
     </main>
   );
 }
