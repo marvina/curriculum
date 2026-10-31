@@ -1,5 +1,15 @@
 {
   "installCommand": "echo 'No install needed'",
   "buildCommand": "echo 'Static release already built'",
-  "outputDirectory": "./"
+  "outputDirectory": "./",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
