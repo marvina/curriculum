@@ -168,7 +168,7 @@ export default function Home() {
             </nav>
             <a
               className="nav-btn"
-              href="https://visual.sdada.edu.cn/kczl.htm"
+              href="https://vcd-course.designdaily.cn/"
               target="_blank"
               rel="noreferrer"
               title="前往课程教学周历系统"
