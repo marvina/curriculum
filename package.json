@@ -1,0 +1,8 @@
+{
+  "name": "curriculum-release",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static release build already prepared'"
+  }
+}
